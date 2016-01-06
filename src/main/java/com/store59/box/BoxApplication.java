@@ -27,7 +27,7 @@ public class BoxApplication extends SpringBootServletInitializer {
     }
 
     @Bean
-    public UserService userService() throws MalformedURLException {
+    public UserService userServiceRemoting() throws MalformedURLException {
         HessianProxyFactory hessianProxyFactoryBean = new HessianProxyFactory();
         hessianProxyFactoryBean.setOverloadEnabled(true);
         String url = userServiceUrl + "/user";

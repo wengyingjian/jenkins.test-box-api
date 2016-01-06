@@ -11,12 +11,12 @@ import com.store59.box.model.User;
 public class UserService {
 
     @Autowired
-    private com.store59.box.remoting.UserService userService;
+    private com.store59.box.remoting.UserService userServiceRemoting;
 
     public List<User> userInfo(String name) {
         User user = new User();
         user.setName(name);
-        return userService.getUsers(user);
+        return userServiceRemoting.getUsers(user);
     }
 
 }

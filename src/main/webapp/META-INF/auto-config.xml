@@ -1,58 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
 	<group>
-		<property name="spring.redis.host" defaultValue="redis.59temai.com"
-				  description="redis host and port" />
-		<property name="boxservice.url" defaultValue="http://localhost:8790/boxservice"
-				  description="Boxservice url" />
-		<property name="baseservice.url" defaultValue="http://172.16.107.218:3000/baseservice"
-				  description="baseservice url" />
-		<property name="dormservice.url" defaultValue="http://192.168.30.214:8080/dormservice"
-				  description="dormservice url" />
-		<property name="box.token.lastTime" defaultValue="86400"
-				  description="token last time" />
-		<property name="box.token.overdueTime" defaultValue="172800"
-				  description="token overdue time" />
-		<property name="boxapi.isCheckSum" defaultValue="true"
-				  description="is check sum" />
-		<property name="boxapi.secretKey" defaultValue="c0e17d5418074da684843e12a16051d9"
-				  description="box connect secret key" />
-		<property name="pay.secretKey" defaultValue="c976503d34ca432c601361f969fd8d85"
-				  description="pay api connect secret key" />
-		<property name="spring.redis.prefix" defaultValue="boxapi."
-				  description="redis prefix" />
-		<property name="couponservice.url" defaultValue="http://172.16.107.119:3000/couponservice"
-				  description="coupon service url" />
-		<property name="dzp.url" defaultValue="http://gala.59store.net/dzp/index.html?s=fx"
-				  description="coupon service url" />
-		<property name="dzp.imageurl" defaultValue="http://static.59store.com/app/download/59store.png"
-				  description="coupon service url" />
-		<property name="dzp.sharebtn" defaultValue="http://static.59store.com/app/download/59dazhuanpan.png"
-				  description="coupon service url" />
-		<property name="creditmallservice.url" defaultValue="http://192.168.30.214:8080/creditmallservice"
-				  description="creditmallservice url" />
-		<property name="box.image.url.pre" defaultValue="http://image.59store.com"
-				  description="box.image.url.pre" />
-		<property name="box.image.url.suf" defaultValue="!small"
-				  description="box.image.url.suf" />
-		<property name="box.item.limit" defaultValue="25"
-				  description="box.item.limit" />
-		<property name="hongbao.secretKey" defaultValue="a04f15a57b1a69498e7af5e89a8a2c33"
-				  description="hongbao.secretKey" />
-		<property name="hongbao.url" defaultValue="http://gala.59shangcheng.com/redenvelope"
-				  description="hongbao.url" />
-		<property name="hongbao.imageurl" defaultValue="http://static.59store.com/app/download/59store.png"
-				  description="hongbao.imageurl" />
-		<property name="hongbao.sharebtn" defaultValue="http://static.59store.com/app/download/img_redp.png"
-				  description="hongbao.sharebtn" />
-		<property name="hongbao.starttime" defaultValue="1446789567"
-				  description="hongbao.starttime" />
-		<property name="hongbao.endtime" defaultValue="1447171199"
-				  description="hongbao.endtime" />
-		<property name="survey.url" defaultValue="http://gala.59shangcheng.com/survey-finance"
-				  description="survey  url" />
-		<property name="survey.imageurl" defaultValue="http://static.59store.com/app/download/img_questionnaire.png"
-				  description="survey imageurl" />
+		<property name="userservice.url" defaultValue="http://localhost:8082"
+				  description="user service url" />
 	</group>
 	<script>
 		<generate template="boxapi.properties.vm" destfile="WEB-INF/classes/boxapi.properties"></generate>
