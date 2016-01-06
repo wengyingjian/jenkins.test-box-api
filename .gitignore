@@ -22,7 +22,6 @@ config.properties
 log4j.properties
 application.properties
 boxapi.properties
-log4j2.yml
 
 # External tool builders
 .externalToolBuilders/
